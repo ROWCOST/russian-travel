@@ -1,29 +1,28 @@
 .cover__overlay {
-  min-height: 740px;
   width: 100%;
-  margin: 0 auto;
-  padding: 245px 312px;
-  text-decoration: none;
-  background-image: url(../../../images/cover__background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-sizing: border-box;
+  min-height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background-image: url(../../../images/cover__background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
-  z-index: 1;
+  text-decoration: none;
+  margin: 0;
+  color: #fff;
 }
 
 .cover__overlay::before {
-  content: "";
+  content: '';
+  background-color: rgba(42, 44, 47, .3);
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
-  background-color: rgba(42, 44, 47, .3);
-  z-index: -1;
+  right: 0;
   transition: background-color .4s ease;
 }
 
@@ -31,23 +30,26 @@
   background-color: rgba(42, 44, 47, .8);
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width: 1024px) {
   .cover__overlay {
     min-height: 640px;
-    padding: 195px 232px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .cover__overlay {
     min-height: 480px;
-    padding: 115px 104px;
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 540px) {
+  .cover__overlay {
+    min-height: 290px;
+  }
+}
+
+@media screen and (max-width: 320px) {
   .cover__overlay {
     min-height: 200px;
-    padding: 33px 16px;
   }
 }

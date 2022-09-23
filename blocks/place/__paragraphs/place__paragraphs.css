@@ -5,24 +5,15 @@
   max-width: 484px;
 }
 
-@media screen and (max-width:1024px) {
-  .place__paragraphs {
-    max-width: 456px;
-    gap: 27px;
-  }
-}
-
 @media screen and (max-width:768px) {
   .place__paragraphs {
-    max-width: 352px;
     gap: 25px;
   }
 }
 
 @media screen and (max-width:320px) {
   .place__paragraphs {
-    max-width: 288px;
     gap: 25px;
-    margin: 0 auto;
+    margin-left: 16px;
   }
 }
