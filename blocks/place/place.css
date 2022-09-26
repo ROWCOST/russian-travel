@@ -31,10 +31,7 @@
 
 @media screen and (max-width: 768px) {
   .place {
-    column-gap: 28px;
     row-gap: 45px;
-    max-width: 720px;
-    padding: 0 0 73px 0;
   }
 }
 
@@ -54,6 +51,5 @@
     grid-template-columns: repeat(1, minmax(min-content, max-content));
     grid-template-rows: 38px repeat(3, minmax(min-content, max-content));
     row-gap: 31px;
-    padding: 0 0 50px 0;
   }
 }
